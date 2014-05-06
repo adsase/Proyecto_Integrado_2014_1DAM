@@ -39,6 +39,7 @@ public class InicioVista extends JFrame {
 	 * Create the frame.
 	 */
 	public InicioVista() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
 		contentPane = new JPanel();
@@ -63,7 +64,7 @@ public class InicioVista extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/fondo_aplicacion.jpg")));
-		lblNewLabel.setBounds(0, 0, 784, 562);
+		lblNewLabel.setBounds(0, 0, 794, 572);
 		contentPane.add(lblNewLabel);
 	}
 }
