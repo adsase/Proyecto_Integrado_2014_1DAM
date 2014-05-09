@@ -30,6 +30,13 @@ public class InicioVista extends JFrame {
 	private JPanel contentPane;
 	JButton btn_crear_off = new JButton("New button");
 	JButton btn_crear_on = new JButton("New Button");
+	JButton btn_misC_off = new JButton("New button");
+	JButton btn_misC_on = new JButton("New Button");
+	JButton btn_demo_off = new JButton("");
+	JButton btn_demo_on = new JButton("");
+	JButton btn_salir_off = new JButton("");
+	JButton btn_salir_on = new JButton("");
+	MisCuestionarios misC = new MisCuestionarios();
 		
 
 	/**
@@ -79,11 +86,9 @@ public class InicioVista extends JFrame {
 		btn_crear_off.addMouseListener(new MouseAdapter() {
 			public void mouseEntered(MouseEvent arg0) {
 				btn_crear_on.setVisible(true);
-				//btn_crear_off.setVisible(false);
 			}
 			public void mouseExited(MouseEvent e) {
 				btn_crear_on.setVisible(false);
-				//btn_crear_off.setVisible(true);
 			}
 		});
 		btn_crear_off.setFocusPainted(false);
@@ -100,6 +105,105 @@ public class InicioVista extends JFrame {
 		contentPane.add(btn_crear_on);
 		btn_crear_on.setBounds(490, 188, 202, 30);
 		btn_crear_on.setVisible(false);
+		btn_misC_off.setBorderPainted(false);
+		
+		//Boton mis Cuestionarios OFF.
+		btn_misC_off.addMouseListener(new MouseAdapter() {
+			public void mouseEntered(MouseEvent arg0) {
+				btn_misC_on.setVisible(true);
+			}
+			public void mouseExited(MouseEvent e) {
+				btn_misC_on.setVisible(false);
+
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				misC.setVisible(true);
+				dispose();
+			}
+		});
+		btn_misC_off.setFocusPainted(false);
+		btn_misC_off.setContentAreaFilled(false);
+		btn_misC_off.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_misC_off.png")));
+		contentPane.add(btn_misC_off);
+		btn_misC_off.setBounds(490, 248, 202, 30);
+		btn_misC_on.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				misC.setVisible(true);
+				dispose();
+			}
+		});
+		btn_misC_on.setBorderPainted(false);
+		
+		//Boton mis Cuestionarios ON.
+		btn_misC_on.setFocusable(false);
+		btn_misC_on.setContentAreaFilled(false);
+		btn_misC_on.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_misC_on.png")));
+		contentPane.add(btn_misC_on);
+		btn_misC_on.setBounds(490, 248, 202, 30);
+		btn_misC_on.setVisible(false);		
+		btn_demo_off.setBorderPainted(false);
+		
+		
+		//Boton Demo OFF.
+		btn_demo_off.addMouseListener(new MouseAdapter() {
+			public void mouseEntered(MouseEvent arg0) {
+				btn_demo_on.setVisible(true);
+			}
+			public void mouseExited(MouseEvent e) {
+				btn_demo_on.setVisible(false);
+
+			}
+		});
+		btn_demo_off.setFocusPainted(false);
+		btn_demo_off.setContentAreaFilled(false);
+		btn_demo_off.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_demo_off.png")));
+		contentPane.add(btn_demo_off);
+		btn_demo_off.setBounds(485, 310, 202, 30);
+		btn_demo_on.setBorderPainted(false);
+		
+		//Boton Demo ON.
+		btn_demo_on.setFocusable(false);
+		btn_demo_on.setContentAreaFilled(false);
+		btn_demo_on.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_demo_on.png")));
+		contentPane.add(btn_demo_on);
+		btn_demo_on.setBounds(485, 310, 202, 30);
+		btn_demo_on.setVisible(false);
+		btn_salir_off.setBorderPainted(false);
+		
+		//Boton Salir OFF.
+		btn_salir_off.addMouseListener(new MouseAdapter() {
+			public void mouseEntered(MouseEvent arg0) {
+				btn_salir_on.setVisible(true);
+			}
+			public void mouseExited(MouseEvent e) {
+				btn_salir_on.setVisible(false);
+
+			}
+		});
+		btn_salir_off.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				dispose();
+			}
+		}); 
+		btn_salir_off.setFocusPainted(false);
+		btn_salir_off.setContentAreaFilled(false);
+		btn_salir_off.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_salir_off.png")));
+		contentPane.add(btn_salir_off);
+		btn_salir_off.setBounds(485, 370, 202, 30);
+		btn_salir_on.setBorderPainted(false);
+		
+		
+		//Boton Salir ON.
+		btn_salir_on.setFocusable(false);
+		btn_salir_on.setContentAreaFilled(false);
+		btn_salir_on.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_salir_on.png")));
+		contentPane.add(btn_salir_on);
+		btn_salir_on.setBounds(485, 370, 202, 30);
+		btn_salir_on.setVisible(false);		
+
 		
 		//Imagen de la libreta.
 		JLabel libreta = new JLabel("");
