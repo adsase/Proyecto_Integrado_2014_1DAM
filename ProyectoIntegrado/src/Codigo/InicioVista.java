@@ -160,7 +160,7 @@ public class InicioVista extends JFrame {
 		btn_demo_off.setContentAreaFilled(false);
 		btn_demo_off.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_demo_off.png")));
 		contentPane.add(btn_demo_off);
-		btn_demo_off.setBounds(485, 310, 202, 30);
+		btn_demo_off.setBounds(476, 310, 202, 30);
 		btn_demo_on.setBorderPainted(false);
 		
 		//Boton Demo ON.
@@ -168,7 +168,7 @@ public class InicioVista extends JFrame {
 		btn_demo_on.setContentAreaFilled(false);
 		btn_demo_on.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_demo_on.png")));
 		contentPane.add(btn_demo_on);
-		btn_demo_on.setBounds(485, 310, 202, 30);
+		btn_demo_on.setBounds(476, 310, 202, 30);
 		btn_demo_on.setVisible(false);
 		btn_salir_off.setBorderPainted(false);
 		
@@ -192,7 +192,7 @@ public class InicioVista extends JFrame {
 		btn_salir_off.setContentAreaFilled(false);
 		btn_salir_off.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_salir_off.png")));
 		contentPane.add(btn_salir_off);
-		btn_salir_off.setBounds(485, 370, 202, 30);
+		btn_salir_off.setBounds(476, 370, 202, 30);
 		btn_salir_on.setBorderPainted(false);
 		
 		
@@ -201,7 +201,7 @@ public class InicioVista extends JFrame {
 		btn_salir_on.setContentAreaFilled(false);
 		btn_salir_on.setIcon(new ImageIcon(InicioVista.class.getResource("/Imagenes/btn_salir_on.png")));
 		contentPane.add(btn_salir_on);
-		btn_salir_on.setBounds(485, 370, 202, 30);
+		btn_salir_on.setBounds(476, 370, 202, 30);
 		btn_salir_on.setVisible(false);		
 
 		
